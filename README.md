@@ -2,6 +2,8 @@ This is an ultra simple "domain for sale" page that you can post on any domains 
 
 It automatically reads the url it is currently at and updates the page accordingly (so the same page can be used for multiple domains).
 
+![domain-for-sale](https://github.com/kevin2379/domain-for-sale/assets/64876105/caed9be8-a592-4538-af3b-8ad4b66a5c7b)
+
 ## Getting Started
 
 - Fork this repository in GitHub
