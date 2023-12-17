@@ -4,11 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>For sale</title>
 </head>
 <body>
     <div style="margin: 0 auto; max-width: 400px; font-family: Ariel, sans-serif; margin-top: 100px;">
-        <h3>To purchase this domain, please email kevin.richardson101 at gmail.com</h3>
+        <h1><span id="site-name">This site</span> is for sale!</h1>
+        <h3>To get in touch, please email kevin.richardson101 (at) gmail.com</h3>
     </div>
 </body>
+<script>
+    let url = window.location.origin;
+    if (url && typeof url === 'string') {
+        url = url.replace('https://', '').replace('www.', '');
+        const siteName = document.getElementById('site-name');
+        siteName.innerHTML = url;
+        document.title = `${url} For Sale`
+    }
+</script>
+<style>
+    body {
+        background: #0f0c29;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+    h1 {
+        color: #FCFCFC;
+    }
+    h3 {
+        color: #FCFCFC;
+    }
+</style>
 </html>
