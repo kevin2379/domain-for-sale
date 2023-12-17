@@ -14,13 +14,13 @@
 </body>
 <script>
     let url = window.location.origin;
-    console.log(url)
     if (url !== 'null' && typeof url === 'string') {
-        url = url.replace('https://', '').replace('www.', '');
+        url = url.replace('https://', '').replace('www.', ''); // remove https:// and www.
         url = url.charAt(0).toUpperCase() + url.slice(1); // Capitalize first letter
+        // Replace "This domain" and title with url:
         const siteName = document.getElementById('site-name');
         siteName.innerHTML = url;
-        document.title = `${url} For Sale`
+        document.title = `${url} For Sale`;
     }
 </script>
 <style>
