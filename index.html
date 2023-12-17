@@ -17,6 +17,7 @@
     console.log(url)
     if (url !== 'null' && typeof url === 'string') {
         url = url.replace('https://', '').replace('www.', '');
+        url = url.charAt(0).toUpperCase() + url.slice(1); // Capitalize first letter
         const siteName = document.getElementById('site-name');
         siteName.innerHTML = url;
         document.title = `${url} For Sale`
