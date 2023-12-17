@@ -1,4 +1,4 @@
-This is an ultra simple "domain for sale" page that you can post on any domains you have for sale. 
+This is an ultra simple "domain for sale" page that you can use for any domains you have for sale. 
 
 It automatically reads the current url and updates the page accordingly (so the same page can be used for multiple domains).
 
@@ -6,7 +6,7 @@ It automatically reads the current url and updates the page accordingly (so the 
 
 ## Getting Started
 
-- Fork this repository in GitHub
+- Fork this repository in GitHub.
 - In ```index.html```, replace 'my.email (at) email.com' with your email address.
 
 ## Deploy on Netlify for Free
