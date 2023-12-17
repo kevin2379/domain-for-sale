@@ -8,13 +8,14 @@
 </head>
 <body>
     <div style="margin: 0 auto; max-width: 400px; font-family: Ariel, sans-serif; margin-top: 100px;">
-        <h1><span id="site-name">This site</span> is for sale!</h1>
+        <h1><span id="site-name">This domain</span> is for sale!</h1>
         <h3>To get in touch, please email kevin.richardson101 (at) gmail.com</h3>
     </div>
 </body>
 <script>
     let url = window.location.origin;
-    if (url && typeof url === 'string') {
+    console.log(url)
+    if (url !== 'null' && typeof url === 'string') {
         url = url.replace('https://', '').replace('www.', '');
         const siteName = document.getElementById('site-name');
         siteName.innerHTML = url;
@@ -32,6 +33,7 @@
     }
     h3 {
         color: #FCFCFC;
+        line-height: 1.5;
     }
 </style>
 </html>
